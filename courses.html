@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses List</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .course-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .course-title {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #007bff;
+        }
+        .coding-platform {
+            font-size: 16px;
+            color: #666;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff; /* Link color */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Courses</h1>
+    <div class="courses-container">
+        <div class="course-card">
+            <div class="course-title"><a href="https://www.codecademy.com/learn/learn-c" target="_blank">C</a></div>
+            <div class="coding-platform">Platform: Codecademy</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title"><a href="https://www.coursera.org/specializations/cplusplus" target="_blank">C++</a></div>
+            <div class="coding-platform">Platform: Coursera</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title"><a href="https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python" target="_blank">Python</a></div>
+            <div class="coding-platform">Platform: edX</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title"><a href="https://www.udemy.com/course/java-the-complete-java-developer-course/" target="_blank">Java</a></div>
+            <div class="coding-platform">Platform: Udemy</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title"><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">JavaScript</a></div>
+            <div class="coding-platform">Platform: FreeCodeCamp</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title"><a href="https://www.khanacademy.org/computing/computer-programming/sql" target="_blank">SQL</a></div>
+            <div class="coding-platform">Platform: Khan Academy</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title"><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML and CSS</a></div>
+            <div class="coding-platform">Platform: W3Schools</div>
+        </div>
+        <div class="course-card">
+            <div class="course-title"><a href="https://leetcode.com/problemset/all/?filters=tag%3ADynamic%20Programming%20tag%3AData%20Structure%20tag%3AC++" target="_blank">DSA in C++</a></div>
+            <div class="coding-platform">Platform: LeetCode</div>
+        </div>
+    </div>
+</body>
+</html>
